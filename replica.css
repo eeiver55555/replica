@@ -1,0 +1,136 @@
+.container {
+    width: 90%;
+    margin: 2% 5%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive; 
+}
+.container a {
+    color: blue; 
+}
+.container a:hover {
+    color: blue; 
+}
+
+#year {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#year select {
+    font-size: 60px;
+    width: 260px;
+    padding-left: 60px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: 'Indie Flower', cursive;
+}
+      
+    
+#year select option {
+    font-size: 35px; 
+}
+
+#calendar{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+#calendar .month{
+    flex: 0 1 21%;
+    margin-bottom: 48px;
+}
+
+#calendar .month::before{
+    content: "enero";
+    display: block;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+
+#calendar .month:nth-child(2)::before {
+    content: "febrero";
+}
+
+#calendar .month:nth-child(3)::before {
+    content: "marzo";
+}
+
+#calendar .month:nth-child(4)::before {
+    content: "abril";
+}
+
+#calendar .month:nth-child(5)::before {
+    content: "mayo";
+}
+
+#calendar .month:nth-child(6)::before {
+    content: "junio";
+}
+
+#calendar .month:nth-child(7)::before {
+    content: "julio";
+}
+
+#calendar .month:nth-child(8)::before {
+    content: "agosto";
+}
+
+#calendar .month:nth-child(9)::before {
+    content: "septiembre";
+}
+
+#calendar .month:nth-child(10)::before {
+    content: "octubre";
+}
+
+#calendar .month:nth-child(11)::before {
+    content: "noviembre";
+}
+
+#calendar .month:nth-child(12)::before {
+    content: "diciembre";
+}
+
+#calendar .month ul {
+    padding: 8px 0;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+}
+
+#calendar .month ul:first-child {
+    margin-bottom: 25px;
+    border-bottom: 3px solid blue;
+}
+
+#calendar .month ul li {
+    list-style-type: none;
+    flex: 1 1 0; 
+}
+
+#calendar .month ul li.holiday {
+    color: white;
+    border-radius: 35px ;
+    font-weight: bold;
+    background-color: blue;
+}
+
+#more-years {
+    margin-top: 32px; 
+    font-family: 'Indie Flower', cursive;
+}
+    
+#more-years div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+
+
